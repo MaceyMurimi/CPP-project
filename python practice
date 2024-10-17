@@ -1,0 +1,123 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOQRY41jHoLQ/gxM2eNk5av",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/MaceyMurimi/CPP-project/blob/main/python%20practice\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MJ0BCaMk4DD_",
+        "outputId": "925cf00c-06e0-4701-ac57-f981e5056bd3"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a number: 3\n",
+            "the number is odd\n"
+          ]
+        }
+      ],
+      "source": [
+        "def is_even(n):\n",
+        "\n",
+        "  return n % 2 == 0\n",
+        "\n",
+        "user_input = int(input(\"enter a number: \"))\n",
+        "\n",
+        "if is_even(user_input):\n",
+        "    print(\"the number is even\")\n",
+        "else:\n",
+        "    print(\"the number is odd\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def calculate_distance(g):#define a function that calculates distance\n",
+        "  t = 5\n",
+        "  distance = g * t**2 #formula for calculating distance\n",
+        "  return distance #returns the distance from calculation\n",
+        "g = 9.8\n",
+        "distance = calculate_distance(g) #call the function to calculate distance\n",
+        "print(distance) #finally print distance\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "M3fj_yho54P8",
+        "outputId": "6ad29e19-12d1-4af2-9b8c-b3af816ffc4e"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "245.00000000000003\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def is_odd(n):\n",
+        "  return n % 2 != 0\n",
+        "user_input = int(input(\"Enter integer\"))\n",
+        "if is_odd(user_input):\n",
+        "  print(\"the number is odd\")\n",
+        "else:\n",
+        "  print(\"the number is even\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ztuj6LeZ-rUG",
+        "outputId": "48e62d6f-3419-4e26-d6ff-b58606dd649d"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter integer4\n",
+            "the number is even\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
